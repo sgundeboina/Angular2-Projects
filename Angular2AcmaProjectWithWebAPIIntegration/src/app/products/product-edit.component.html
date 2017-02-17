@@ -1,0 +1,48 @@
+﻿<div class='panel panel-primary'>
+    <div class='panel-heading'>
+        {{pageTitle}}
+    </div>
+    <div *ngIf='product'>
+        <form class="form-horizontal" name="productForm" novalidate>
+            <fieldset>
+                <div class="panel-body">
+
+                    <div class="form-group">
+                        <label class="col-md-2 control-label" for="inputProductName">Product Name</label>
+                        <div class="col-md-4">
+                            <input class="form-control"
+                                   name="inputProductName"
+                                   type="text"
+                                   placeholder="Product Name"
+                                   [(ngModel)]="product.productName"
+                                   required
+                                   #inputProductName="ngModel">
+                        </div>
+                        <span class="help-block has-error">
+                            <!--<span ng-message="required">Required</span>-->
+                            <span [hidden]="inputProductName.valid||inputProductName.pristine" class="alert alert-danger">
+                                Product name is required.
+                            </span>
+                        </span>
+                    </div>
+
+
+                </div>
+                <div class='panel-footer'>
+                    <a class='btn btn-default' [routerLink]="['/product', product.productId]" style='width: 80px'>
+                        Cancel
+                    </a>
+                    <a class="btn btn-primary"
+                       (click)='onSave()'
+                       style="width: 80px; margin-left: 10px;">
+                        Save
+
+                    </a>
+
+                </div>
+            </fieldset>
+        </form>
+
+    </div>
+
+</div>
