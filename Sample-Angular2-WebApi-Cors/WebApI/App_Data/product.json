@@ -1,0 +1,22 @@
+[
+  {
+    "ProductId": 1,
+    "ProductName": "Leaf Rake2",
+    "Price": 19.9
+  },
+  {
+    "ProductId": 2,
+    "ProductName": "Garden Cars",
+    "Price": 29.9
+  },
+  {
+    "ProductId": 3,
+    "ProductName": "Hand Cultivator",
+    "Price": 40.0
+  },
+  {
+    "ProductId": 4,
+    "ProductName": "Leaf Rake",
+    "Price": 19.9
+  }
+]

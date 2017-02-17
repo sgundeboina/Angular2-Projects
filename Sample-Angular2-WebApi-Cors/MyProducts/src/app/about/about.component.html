@@ -1,0 +1,73 @@
+<h3>About Component</h3>
+<p>This is the about CRUD exercie from Angular-2!</p>
+<div class="panel panel-primary">
+    <div class="panel-heading">{{pageTitle}}</div>
+    <form class="form-horizontal" name="productForm" novalidate>
+        <fieldset>
+            <div class="panel-body">
+                <div *ngIf='product'>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Product id:</label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control"
+                                   name="inputProductId"
+                                   placeholder="Product Id"
+                                   [(ngModel)]="product.productId"
+                                   required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Product name:</label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control"
+                                   name="inputProductName"
+                                   placeholder="Product name"
+                                   [(ngModel)]="product.productName"
+                                   required />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Product price:</label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control"
+                                   name="inputProductCost"
+                                   placeholder="Product cost"
+                                   [(ngModel)]="product.price" />
+                        </div>
+                    </div>
+                    <div class="col-md-offset-2">
+                        {{message}}
+                    </div>
+
+                </div>
+            </div>
+            <div class="panel-footer">
+                <div class="col-md-offset-2">
+                    <a class="btn btn-primary"
+                       (click)="onGet()"
+                       style="width: 80px; margin-left: 10px;">
+                        Get
+                    </a>
+                    <a class="btn btn-primary"
+                       (click)="onCreate()"
+                       style="width: 80px; margin-left: 10px;">
+                        Create
+                    </a>
+                    <a class="btn btn-primary"
+                       (click)="onUpdate()"
+                       style="width: 80px; margin-left: 10px;">
+                        Update
+                    </a>
+                    <a class="btn btn-primary"
+                       (click)="onDelete()"
+                       style="width: 80px; margin-left: 10px;">
+                        Delete
+                    </a>
+                </div>
+            </div>
+        </fieldset>
+
+    </form>
+
+</div>
