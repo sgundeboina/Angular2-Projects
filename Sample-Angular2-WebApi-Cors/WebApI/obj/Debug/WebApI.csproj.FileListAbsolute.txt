@@ -47,3 +47,5 @@ C:\Experiments\Delete\MyProducts\WebApI\obj\Debug\WebApI.pdb
 C:\Experiments\Delete\MyProducts\WebApI\bin\System.Web.Cors.dll
 C:\Experiments\Delete\MyProducts\WebApI\bin\System.Web.Http.Cors.dll
 C:\Experiments\Delete\MyProducts\WebApI\bin\System.Web.Http.Cors.xml
+C:\Source\GitHub\Angular2Experiments\Sample-Angular2-WebApi-Cors\WebApI\obj\Debug\WebApI.dll
+C:\Source\GitHub\Angular2Experiments\Sample-Angular2-WebApi-Cors\WebApI\obj\Debug\WebApI.pdb

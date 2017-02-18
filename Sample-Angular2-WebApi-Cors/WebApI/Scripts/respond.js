@@ -18,7 +18,7 @@ window.matchMedia = window.matchMedia || (function(doc, undefined){
   
   var bool,
       docElem  = doc.documentElement,
-      refNode  = docElem.firstElementChild || docElem.firstChild,
+      refNode  = docElem.firstElementChild || docElem.firstChild, 
       // fakeBody required for <FF4 when executed in <head>
       fakeBody = doc.createElement('body'),
       div      = doc.createElement('div');
