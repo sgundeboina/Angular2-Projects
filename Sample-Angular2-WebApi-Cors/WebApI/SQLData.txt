@@ -1,0 +1,4 @@
+
+
+select dateadd(day, datediff(day, 0, getdate()), 0) as StartDate,
+	dateadd(second, -1, dateadd(day, datediff(day, 0, getdate())+1, 0)) as EndDate
